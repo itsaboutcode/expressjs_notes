@@ -32,7 +32,8 @@ npm init -y
 #### 4. Install ExpressJS and other dependencies
 
 ```
-npm install express mongoose nodemon dotenv
+npm i express mongoose dotenv body-parser cors helmet morgan
+npm i -D nodemon
 ```
 
 #### 5. Create an index.js file and write the following Hello World program
@@ -62,6 +63,15 @@ node index.js
 
 ```
 Server Listening on PORT: 3000
+```
+
+#### 7. Creating the first REST End Point
+
+```
+app.get("/hello", (req, res) => {
+
+  res.send("Hello World");
+});
 ```
 
 # Reference
