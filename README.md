@@ -34,6 +34,8 @@ npm init -y
 ```
 npm i express mongoose dotenv body-parser cors helmet morgan dotenv
 npm i -D nodemon
+mpm i mongodb-memory-server # if you want to do some mocking
+npm i express-jwt jwks-rsa
 ```
 
 - `body-parser:` You will use this dependency to convert the body of incoming requests into JavaScript objects.
@@ -51,6 +53,12 @@ npm i -D nodemon
 - `dotenv:` Dotenv to manage a .env file.
 
 - `mongoose:` Mongoose for managing data in MongoDB using various queries
+
+- `mongodb-memory-server:` Local in-memory mongoDB instance which will delete everything whenever you restart your server
+
+- `express-jwt:` A middleware that validates JSON Web Tokens (JWTs) and sets the req.user with its attributes.
+
+- `jwks-rsa:` A library to retrieve RSA public keys from a JWKS (JSON Web Key Set)
 
 #### 5. Create an index.js file and write the following Hello World program
 
@@ -89,6 +97,40 @@ app.get("/hello", (req, res) => {
   res.send("Hello World");
 });
 ```
+
+#### 8. Restarting Server Automatically
+
+In the `package.json` file, add a script that says the following:
+
+"scripts": {
+    "start": "nodemon index.js"
+},
+
+Run the server with following command
+
+```
+npm start
+```
+
+**Sample Output**
+
+```
+> nodemon index.js
+
+[nodemon] 3.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node index.js`
+Server Listening on PORT: 3000
+```
+
+
+### JS Concepts
+
+1. const
+2. let
+3. async
 
 # Reference
 
