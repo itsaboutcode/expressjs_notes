@@ -1,4 +1,4 @@
-# ExpressJS
+# [ExpressJS](https://expressjs.com/)
 
 
 These notes will teach us how to create Application **programming interfaces (APIs)** in a standard called **representational state transfer (REST**).
@@ -29,10 +29,39 @@ cd sample_exressjs_rest_api_project
 npm init -y
 ```
 
-#### 4. Install expressJS dependency
+#### 4. Install ExpressJS and other dependencies
 
 ```
-npm install express
+npm install express mongoose nodemon dotenv
+```
+
+#### 5. Create an index.js file and write the following Hello World program
+
+```
+const express = require('express');
+
+const PORT = process.env.PORT || 3000;
+
+const app = express ();
+app.use(express.json());
+
+
+app.listen(PORT, () => {
+  console.log("Server Listening on PORT:", PORT);
+});
+
+```
+
+#### 6. Run the Server
+
+```
+node index.js
+```
+
+**Output**
+
+```
+Server Listening on PORT: 3000
 ```
 
 # Reference
