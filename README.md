@@ -38,15 +38,15 @@ mpm i mongodb-memory-server # if you want to do some mocking
 npm i express-jwt jwks-rsa
 ```
 
-- `body-parser:` You will use this dependency to convert the body of incoming requests into JavaScript objects.
+- [`body-parser:`](https://github.com/expressjs/body-parser) You will use this dependency to convert the body of incoming requests into JavaScript objects.
 
-- `cors:` You will use this dependency to configure Express to add headers stating that your API accepts requests coming from other origins. This is known as Cross-Origin Resource Sharing (CORS).
+- [`cors:`](https://github.com/expressjs/cors) You will use this dependency to configure Express to add headers stating that your API accepts requests coming from other origins. This is known as Cross-Origin Resource Sharing (CORS).
 
-- `express:` This is the Express library itself.
+- [`express:`](https://github.com/expressjs/express) This is the Express library itself.
 
-- `helmet:` This library helps to secure Express APIs by defining various HTTP headers.
+- [`helmet:`](https://github.com/helmetjs/helmet) This library helps to secure Express APIs by defining various HTTP headers.
 
-- `morgan:` This library adds some logging capabilities to your Express API.
+- [`morgan:`](https://github.com/expressjs/morgan) This library adds some logging capabilities to your Express API.
 
 - `nodemon:` Nodemon to restart our server every time we save our file.
 
@@ -54,7 +54,7 @@ npm i express-jwt jwks-rsa
 
 - `mongoose:` Mongoose for managing data in MongoDB using various queries
 
-- `mongodb-memory-server:` Local in-memory mongoDB instance which will delete everything whenever you restart your server
+- [`mongodb-memory-server:`](https://github.com/nodkz/mongodb-memory-server) Local in-memory mongoDB instance which will delete everything whenever you restart your server
 
 - `express-jwt:` A middleware that validates JSON Web Tokens (JWTs) and sets the req.user with its attributes.
 
