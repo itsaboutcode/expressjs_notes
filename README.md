@@ -32,7 +32,7 @@ npm init -y
 #### 4. Install ExpressJS and other dependencies
 
 ```
-npm i express mongoose dotenv body-parser cors helmet morgan dotenv
+npm i express mongoose dotenv body-parser cors helmet morgan dotenv i18n
 npm i -D nodemon
 mpm i mongodb-memory-server # if you want to do some mocking
 npm i express-jwt jwks-rsa
@@ -126,7 +126,9 @@ Server Listening on PORT: 3000
 ```
 
 
-**Use [dotenv package](use_dotenv_package.md)**
+- How to **Use [dotenv package](use_dotenv_package.md)**
+
+- How to **Use [i18n package](use_i18n_package.md)**
 
 ### JS Concepts
 
