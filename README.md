@@ -1,20 +1,18 @@
 # [ExpressJS](https://expressjs.com/)
 
 
-These notes will teach us how to create Application **programming interfaces (APIs)** in a standard called **representational state transfer (REST**).
-
-For the DB, we will use MongoDB.
+These instructions guide us through the process of creating **Application Programming Interfaces (APIs)** using the **Representational State Transfer (REST)** standard. MongoDB will be employed as the database.
 
 ### Creating ExpressJS Project
 
-#### 1. Install [NodeJS](https://nodejs.org/en/) and confirm that it's installed
+#### Step 01 - Install [NodeJS](https://nodejs.org/en/) and Verify Installation
 
 ```
 node -v
 npm -v
 ```
 
-#### 2. Create project Directory
+#### Step 02 - Establish Project Directory
 
 ```
 mkdir sample_exressjs_rest_api_project
@@ -23,13 +21,14 @@ cd sample_exressjs_rest_api_project
 
 ```
 
-#### 3. Initialize new NodeJS Project
+#### Step 03 - Initialize a New NodeJS Project
+
 
 ```
 npm init -y
 ```
 
-#### 4. Install ExpressJS and other dependencies
+#### Step 04 - Install Dependencies
 
 ```
 npm i express mongoose dotenv body-parser cors helmet morgan dotenv i18n
@@ -38,29 +37,29 @@ mpm i mongodb-memory-server # if you want to do some mocking
 npm i express-jwt jwks-rsa
 ```
 
-- [`body-parser:`](https://github.com/expressjs/body-parser) You will use this dependency to convert the body of incoming requests into JavaScript objects.
+- [`body-parser:`](https://github.com/expressjs/body-parser) - Converts incoming request bodies into JavaScript objects.
 
-- [`cors:`](https://github.com/expressjs/cors) You will use this dependency to configure Express to add headers stating that your API accepts requests coming from other origins. This is known as Cross-Origin Resource Sharing (CORS).
+- [`cors:`](https://github.com/expressjs/cors) - Configures Express to handle **Cross-Origin Resource Sharing (CORS)**.
 
-- [`express:`](https://github.com/expressjs/express) This is the Express library itself.
+- [`express:`](https://github.com/expressjs/express) - The Express Library.
 
-- [`helmet:`](https://github.com/helmetjs/helmet) This library helps to secure Express APIs by defining various HTTP headers.
+- [`helmet:`](https://github.com/helmetjs/helmet) - Enhances Express API security through HTTP header definition.
 
-- [`morgan:`](https://github.com/expressjs/morgan) This library adds some logging capabilities to your Express API.
+- [`morgan:`](https://github.com/expressjs/morgan) - Adds logging capabilities to the Express API.
 
-- `nodemon:` Nodemon to restart our server every time we save our file.
+- `nodemon:` - Restarts the server on file save.
 
-- `dotenv:` Dotenv to manage a .env file.
+- `dotenv:` - Manages a .env file.
 
-- `mongoose:` Mongoose for managing data in MongoDB using various queries
+- `mongoose:` - Manages data in MongoDB.
 
-- [`mongodb-memory-server:`](https://github.com/nodkz/mongodb-memory-server) Local in-memory mongoDB instance which will delete everything whenever you restart your server
+- [`mongodb-memory-server:`](https://github.com/nodkz/mongodb-memory-server) - Local in-memory MongoDB instance.
 
-- `express-jwt:` A middleware that validates JSON Web Tokens (JWTs) and sets the req.user with its attributes.
+- `express-jwt:` - Middleware for JSON Web Token (JWT) validation.
 
-- `jwks-rsa:` A library to retrieve RSA public keys from a JWKS (JSON Web Key Set)
-
-#### 5. Create an index.js file and write the following Hello World program
+- `jwks-rsa:` - Retrieves RSA public keys from a JSON Web Key Set (JWKS).
+  
+#### Step 05 - Create an `index.js` File with a Hello World Program
 
 ```
 const express = require('express');
@@ -77,7 +76,7 @@ app.listen(PORT, () => {
 
 ```
 
-#### 6. Run the Server
+#### Step 06 - Run the Server
 
 ```
 node index.js
@@ -89,7 +88,7 @@ node index.js
 Server Listening on PORT: 3000
 ```
 
-#### 7. Creating the first REST End Point
+#### Step 07 - Creating the First REST Endpoint
 
 ```
 app.get("/hello", (req, res) => {
@@ -98,15 +97,15 @@ app.get("/hello", (req, res) => {
 });
 ```
 
-#### 8. Restarting Server Automatically
+#### Step 08 - Automatically Restart the Server
 
-In the `package.json` file, add a script that says the following:
+In `package.json`, add the following script:
 
 "scripts": {
     "start": "nodemon index.js"
 },
 
-Run the server with the following command
+Run the server with:
 
 ```
 npm start
@@ -130,7 +129,7 @@ Server Listening on PORT: 3000
 
 - How to **Use [i18n package](use_i18n_package.md)**
 
-### JS Concepts
+### JavaScript Concepts
 
 1. const
 2. let
