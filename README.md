@@ -106,7 +106,7 @@ In the `package.json` file, add a script that says the following:
     "start": "nodemon index.js"
 },
 
-Run the server with following command
+Run the server with the following command
 
 ```
 npm start
@@ -126,6 +126,8 @@ Server Listening on PORT: 3000
 ```
 
 
+**Use [dotenv package](use_dotenv_package.md)**
+
 ### JS Concepts
 
 1. const
@@ -135,3 +137,4 @@ Server Listening on PORT: 3000
 # Reference
 
 - https://expressjs.com/
+- https://12factor.net/
