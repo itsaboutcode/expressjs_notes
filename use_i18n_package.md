@@ -1,4 +1,4 @@
-# [i18n](https://www.npmjs.com/package/i18n) package
+# How to use [i18n](https://www.npmjs.com/package/i18n) package
 
 In scenarios where it's necessary to communicate messages in a language that aligns with the user's preferred language, the `i18n` package becomes essential. Consider a typical `REST` API scenario where the front-end application supports multiple languages. In such cases, it's crucial to convey success and error messages in the user's native language to enhance the user experience.
 
