@@ -1,6 +1,6 @@
 # What is the [dotenv](https://www.npmjs.com/package/dotenv) package?
 
-Dotenv is a module designed to load environment variables from a `.env` file into the `process.env` object. Follow the outlined steps below to seamlessly integrate this package into your project.
+[dotenv](https://www.npmjs.com/package/dotenv) is a module designed to load environment variables from a `.env` file into the `process.env` object. Follow the outlined steps below to seamlessly integrate this package into your project.
 
 
 ### Step 01 - Install the package
