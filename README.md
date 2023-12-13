@@ -31,7 +31,7 @@ npm init -y
 #### Step 04 - Install Dependencies
 
 ```
-npm i express mongoose dotenv body-parser cors helmet morgan dotenv i18n
+npm i express mongoose dotenv body-parser cors helmet morgan compression i18n
 npm i -D nodemon
 mpm i mongodb-memory-server # if you want to do some mocking
 npm i express-jwt jwks-rsa
@@ -58,6 +58,8 @@ npm i express-jwt jwks-rsa
 - `express-jwt:` - Middleware for JSON Web Token (JWT) validation.
 
 - `jwks-rsa:` - Retrieves RSA public keys from a JSON Web Key Set (JWKS).
+
+- [`compression:`](https://www.npmjs.com/package/compression) - This middleware will attempt to compress response bodies for all requests that traverse through the middleware.
   
 #### Step 05 - Create an `index.js` File with a Hello World Program
 
