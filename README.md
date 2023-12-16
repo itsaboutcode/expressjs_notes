@@ -1,11 +1,15 @@
 # [ExpressJS](https://expressjs.com/)
 
 
-These instructions guide us through creating **Application Programming Interfaces (APIs)** using the **Representational State Transfer (REST)** standard using the ExpressJS framework. Express is an unopinionated web framework, written in JavaScript and hosted within the Node.js runtime environment. MongoDB will be employed as the database.
+These instructions guide us through creating **Application Programming Interfaces (APIs)** using the **Representational State Transfer (REST)** standard using the ExpressJS framework. Express is an unopinionated web framework, written in JavaScript and hosted within the [Node.js](https://nodejs.org/en/) runtime environment. MongoDB will be employed as the database.
 
 ### Creating ExpressJS Project
 
-#### Step 01 - Install [NodeJS](https://nodejs.org/en/) and Verify Installation
+#### Step 01 - Install [NodeJS](https://nodejs.org/en/), [npm](https://www.npmjs.com/) and Verify Installation
+
+- Node (or more formally Node.js) is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript. 
+
+- The node package manager (**npm**) provides access to hundreds of thousands of reusable packages.
 
 ```
 node -v
