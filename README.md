@@ -67,6 +67,8 @@ npm i express-jwt jwks-rsa
   
 #### Step 05 - Create an `index.js` File with a Hello World Program
 
+- A `module` is a JavaScript `library/file` that you can import into other code using Node's `require()` function.
+
 ```
 const express = require('express');
 
