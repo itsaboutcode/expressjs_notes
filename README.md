@@ -1,7 +1,7 @@
 # [ExpressJS](https://expressjs.com/)
 
 
-These instructions guide us through the process of creating **Application Programming Interfaces (APIs)** using the **Representational State Transfer (REST)** standard. MongoDB will be employed as the database.
+These instructions guide us through creating **Application Programming Interfaces (APIs)** using the **Representational State Transfer (REST)** standard using the ExpressJS framework. Express is an unopinionated web framework, written in JavaScript and hosted within the Node.js runtime environment. MongoDB will be employed as the database.
 
 ### Creating ExpressJS Project
 
@@ -103,9 +103,11 @@ app.get("/hello", (req, res) => {
 
 In `package.json`, add the following script:
 
+```
 "scripts": {
     "start": "nodemon index.js"
-},
+}
+```
 
 Run the server with:
 
@@ -136,8 +138,13 @@ Server Listening on PORT: 3000
 1. const
 2. let
 3. async
+4. await
 
 # Reference
 
 - https://expressjs.com/
+- https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js/5511507
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+- https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
 - https://12factor.net/
